@@ -18,7 +18,7 @@
                     {% for image in section.images %}
 
                     <div class="item {%if forloop.first %}active{% endif %}">
-                        <img src="{{ (image | remove:' ') | prepend: site.baseurl  }}">
+                        <img src="{{ image | remove:' ' }}">
                     </div>
 
                     {% endfor %}
