@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% assign sections = (site.sections | sort: 'order') %}
+
+
+<section class="panel-group" id="main-section" role="main" aria-multiselectable="true">
+    {% for section in sections %}
+
+    {% include {{ section.type }}.html param=section %}
+
+    {% endfor %}
+</section>
+

@@ -1,0 +1,64 @@
+# Site settings
+title: Portfolio Night
+email: djamel@mobilenowgroup.com
+description: > #
+baseurl: ""
+url: "http://"
+twitter_username: PortfolioNight
+facebook_username:  portfolionight
+
+# Build settings
+markdown: kramdown
+
+# Collections
+collections:
+  - sections
+
+sass:
+    style: :compressed
+
+prose:
+  rooturl: ''
+  siteurl: 'http://MobileNowGroup.github.io/PortfolioNight/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'images'
+  ignore:
+    - /_includes
+    - /_layouts
+    - /_sass
+    - /css
+    - /fonts
+    - /js
+    - /.bowerrc
+    - /.gitignore
+  metadata:
+    _sections:
+      - name: "type"
+        field:
+          element: "select"
+          label: "Type"
+          options:
+            - name: "Text section"
+              value: "page"
+            - name: "Gallery section"
+              value: "gallery"
+            - name: "Button section"
+              value: "button"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "order"
+        field:
+          element: "text"
+          label: "Order"
+      - name: "href"
+        field:
+          element: "text"
+          label: "Link"
+          placeholder: "http://"
+      - name: "images"
+        field:
+          element: "text"
+          label: "Images"
+          placeholder: "[images/1.jpg, images/2.jpg, ...]"
