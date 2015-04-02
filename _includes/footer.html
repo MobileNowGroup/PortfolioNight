@@ -1,2 +1,17 @@
 <script src="{{ "js/lib/jquery-2.1.3.min.js" }}"></script>
+<script src="{{ "js/lib/hammer/hammer.min.js" }}"></script>
+<script src="{{ "js/lib/hammer/jquery.hammer.js" }}"></script>
 <script src="{{ "js/lib/bootstrap/bootstrap.min.js" }}"></script>
+
+<script>
+    $(function () {
+
+        $('.carousel').hammer().on('panleft', function (e) {
+            $(this).carousel('next');
+        });
+
+        $('.carousel').hammer().on('panright', function (e) {
+            $(this).carousel('prev');
+        });
+    });
+</script>
