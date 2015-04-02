@@ -3,9 +3,17 @@
 ---
 @charset "utf-8";
 
+@font-face {
+  font-family: 'Portfolio';
+  src: url('../fonts/portfolio/pncs-webfont.eot');
+  src: url('../fonts/portfolio/pncs-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/portfolio/pncs-webfont.woff2') format('woff2'), url('../fonts/portfolio/pncs-webfont.woff') format('woff'), url('../fonts/portfolio/pncs-webfont.ttf') format('truetype'), url('../fonts/portfolio/pncs-webfont.svg#pncsbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 //== Typography
 //
-//$font-family-sans-serif: 'Roboto', sans-serif !default;
+$font-family-sans-serif: 'Roboto', sans-serif !default;
 
 //== Components
 //
@@ -46,10 +54,8 @@ $line-height-computed:        20px;
 
 .jumbotron {
   border-radius: 0;
-
-  h1 {
-    text-transform: uppercase;
-  }
+  text-transform: uppercase;
+  font-family: 'Portfolio', 'Roboto', sans-serif;
 }
 
 #logo {
@@ -62,8 +68,11 @@ $line-height-computed:        20px;
   border-radius: 0;
   text-align: left;
   font-size: $font-size-h4;
+  font-family: 'Portfolio', 'Roboto', sans-serif;
 }
 
-a {
+.panel-title a {
   text-decoration: none !important;
+  display: block;
+  font-family: 'Portfolio', 'Roboto', sans-serif;
 }
