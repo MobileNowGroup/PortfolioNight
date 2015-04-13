@@ -1,0 +1,33 @@
+$MoreButton-bg: #fff;
+$MoreButton-size: 1.5em;
+$MoreButton-symbol-size: 50%;
+$MoreButton-symbol-weight: 0.1em;
+$MoreButton-symbol-color: #000;
+
+.MoreButton {
+  border: none;
+  background: $MoreButton-bg;
+  border-radius: 100%;
+  width: $MoreButton-size;
+  height: $MoreButton-size;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    background: $MoreButton-symbol-color;
+    display: block;
+    height: $MoreButton-symbol-weight;
+    left: 50%;
+    margin-left: -$MoreButton-symbol-size / 2;
+    margin-top: -$MoreButton-symbol-weight / 2;
+    position: absolute;
+    top: 50%;
+    transition: transform 150ms ease;
+    width: $MoreButton-symbol-size;
+  }
+
+  &:before {
+    transform: rotate(270deg);
+  }
+}
