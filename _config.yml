@@ -13,6 +13,7 @@ markdown: kramdown
 # Collections
 collections:
   - sections
+  - hero
 
 sass:
     style: :compressed
@@ -67,3 +68,17 @@ prose:
           element: "text"
           label: "Images"
           placeholder: "[images/1.jpg, images/2.jpg, ...]"
+
+    _hero:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+      - name: "order"
+        field:
+          element: "text"
+          label: "Order"
