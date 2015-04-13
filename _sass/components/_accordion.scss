@@ -1,0 +1,14 @@
+.Accordion-header {
+  display: table;
+  width: 100%;
+}
+
+.Accordion-header-title,
+.Accordion-header-button {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.Accordion-header-title {
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+<article class="panel panel-default">
+
+    <a class="Accordion-header collapsed panel-heading"
+            href="#article-{{ section.order }}"
+            aria-controls="article-{{ section.order }}"
+            aria-expanded="false"
+            data-toggle="collapse"
+            data-parent="#main-section">
+        <h4 class="Accordion-header-title">{{ section.title }}</h4>
+        <div class="Accordion-header-button">
+            <div class="MoreButton"></div>
+        </div>
+    </a>
+
+    <div id="article-{{ section.order }}"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="article-{{ section.order }}">
+        {% include {{ section.type }}-body.html param=section %}
+    </div>
+
+</article>

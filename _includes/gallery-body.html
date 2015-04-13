@@ -1,0 +1,11 @@
+<div id="gallery-{{ section.order }}" class="Gallery panel-body">
+
+    {% for image in section.images %}
+
+    <div class="Gallery-item">
+        <img class="Gallery-img" src="{{ image | remove: ' ' }}">
+    </div>
+
+    {% endfor %}
+
+</div>
