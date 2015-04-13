@@ -1,0 +1,14 @@
+.Page-header-link {
+  display: table;
+  width: 100%;
+}
+
+.Page-header-title,
+.Page-header-button {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.Page-header-title {
+  width: 100%;
+}

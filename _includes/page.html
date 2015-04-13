@@ -1,14 +1,12 @@
-<article class="panel panel-default">
+<article class="Page panel panel-default">
 
-    <div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#main-section" href="#article-{{ section.order }}" aria-expanded="false"
-               aria-controls="article-{{ section.order }}" class="collapsed">
-                {{ section.title }}
-            </a>
-        </h4>
-        <button class="MoreButton"></button>
-    </div>
+    <a data-toggle="collapse" data-parent="#main-section" href="#article-{{ section.order }}" aria-expanded="false"
+            aria-controls="article-{{ section.order }}" class="Page-header-link collapsed panel-heading">
+        <h4 class="Page-header-title">{{ section.title }}</h4>
+        <div class="Page-header-button">
+            <div class="MoreButton"></div>
+        </div>
+    </a>
 
     <div id="article-{{ section.order }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="article-{{ section.order }}">
         <div class="panel-body">
