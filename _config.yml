@@ -36,6 +36,7 @@ prose:
     - /js
     - /.bowerrc
     - /.gitignore
+    - /.editorconfig
     - /_config.yml
   metadata:
     _sections:
@@ -54,6 +55,10 @@ prose:
         field:
           element: "text"
           label: "Title"
+      - name: "image_title"
+        field:
+          element: "text"
+          label: "Image title"
       - name: "order"
         field:
           element: "text"
