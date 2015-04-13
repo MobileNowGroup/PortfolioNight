@@ -16,7 +16,7 @@
             class="panel-collapse collapse"
             role="tabpanel"
             aria-labelledby="article-{{ section.order }}">
-        <div class="panel-body">{% include {{ section.type }}-body.html param=section %}</div>
+        {% include {{ section.type }}-body.html param=section %}
     </div>
 
 </article>
