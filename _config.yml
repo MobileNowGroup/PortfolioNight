@@ -2,7 +2,7 @@
 title: Portfolio Night
 email: djamel@mobilenowgroup.com
 description: > #
-baseurl: ""
+baseurl: "/PortfolioNight"
 url: "http://"
 twitter_username: PortfolioNight
 facebook_username:  portfolionight
@@ -23,7 +23,11 @@ prose:
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'images'
   ignore:
-    - /_includes
+    - /_includes/button.html
+    - /_includes/footer.html
+    - /_includes/gallery.html
+    - /_includes/head.html
+    - /_includes/page.html
     - /_layouts
     - /_sass
     - /css
@@ -31,6 +35,7 @@ prose:
     - /js
     - /.bowerrc
     - /.gitignore
+    - /_config.yml
   metadata:
     _sections:
       - name: "type"
