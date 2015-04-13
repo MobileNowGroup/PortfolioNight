@@ -1,7 +1,14 @@
 .Gallery {
   background: #000;
+  padding: $Gallery-spacing / 2;
+}
 
-  img {
-    max-width: 100%;
-  }
+.Gallery-item {
+  @extend .col-xs-6;
+  padding: $Gallery-spacing / 2;
+}
+
+.Gallery-img {
+  display: block;
+  max-width: 100%;
 }
