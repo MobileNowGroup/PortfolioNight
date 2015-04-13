@@ -1,17 +1,1 @@
-<article class="panel panel-default">
-
-    <div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#main-section" href="#article-{{ section.order }}" aria-expanded="false"
-               aria-controls="article-{{ section.order }}" class="collapsed">
-                {{ section.title }}
-            </a>
-        </h4>
-    </div>
-
-    <div id="article-{{ section.order }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="article-{{ section.order }}">
-        <div class="panel-body">
-            {{ section.content }}
-        </div>
-    </div>
-</article>
+{% include accordion.html param=section %}
