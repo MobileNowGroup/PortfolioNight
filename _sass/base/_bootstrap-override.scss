@@ -26,3 +26,11 @@
   display: block;
   font-family: 'Portfolio', 'Roboto', sans-serif;
 }
+
+.panel {
+  border-width: 0;
+}
+
+.panel-body {
+  border-top-width: 0 !important;
+}
