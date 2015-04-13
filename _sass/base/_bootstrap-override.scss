@@ -1,0 +1,28 @@
+.container-fluid {
+  padding: 0;
+}
+
+.jumbotron {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-family: 'Portfolio', 'Roboto', sans-serif;
+}
+
+#logo {
+  margin-bottom: $jumbotron-padding;
+}
+
+.btn-action {
+  background: #000;
+  color: #fff;
+  border-radius: 0;
+  text-align: left;
+  font-size: $font-size-h4;
+  font-family: 'Portfolio', 'Roboto', sans-serif;
+}
+
+.panel-title a {
+  text-decoration: none !important;
+  display: block;
+  font-family: 'Portfolio', 'Roboto', sans-serif;
+}

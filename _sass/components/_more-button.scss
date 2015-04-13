@@ -1,9 +1,3 @@
-$MoreButton-bg: #fff;
-$MoreButton-size: 1.5em;
-$MoreButton-symbol-size: 50%;
-$MoreButton-symbol-weight: 0.1em;
-$MoreButton-symbol-color: #000;
-
 .MoreButton {
   border: none;
   background: $MoreButton-bg;
@@ -27,7 +21,16 @@ $MoreButton-symbol-color: #000;
     width: $MoreButton-symbol-size;
   }
 
-  &:before {
-    transform: rotate(270deg);
+  &, // Default.
+  &.e-more {
+    &:before {
+      transform: rotate(270deg);
+    }
+  }
+
+  &.e-less {
+    &:before {
+      transform: rotate(0deg);
+    }
   }
 }
