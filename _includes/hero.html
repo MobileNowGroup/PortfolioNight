@@ -1,0 +1,26 @@
+{% assign heroes = (site.hero | sort: 'order') %}
+
+<section id="hero" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+
+        {% for hero in heroes %}
+
+        <li data-target="#hero" data-slide-to="{{ forloop.index0 }}" {%if forloop.first %}class="active"{% endif %}></li>
+
+        {% endfor %}
+
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+        {% for hero in heroes %}
+
+        <article class="item {%if forloop.first %}active{% endif %}">
+            <img src="{{ hero.image | remove:' ' }}" alt="{{ hero.title }}">
+        </article>
+
+        {% endfor %}
+
+    </div>
+</section>
