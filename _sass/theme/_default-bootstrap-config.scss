@@ -1,34 +1,21 @@
-//== Typography
-//
-$font-family-sans-serif: 'Roboto', sans-serif !default;
+$font-family-sans-serif: 'Roboto', sans-serif;
 
-//== Components
-//
-//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 $border-radius-large: 0!default;
 
-//== Jumbotron
-//
-//##
+$jumbotron-padding: 30px;
+$jumbotron-color: #fff;
+$jumbotron-bg: #000;
+$jumbotron-heading-color: inherit;
 
-$jumbotron-padding:              30px !default;
-$jumbotron-color:                #fff !default;
-$jumbotron-bg:                   #000 !default;
-$jumbotron-heading-color:        inherit !default;
+$panel-bg: #fff;
+$panel-body-padding: 15px;
+$panel-heading-padding: 10px 15px;
+$panel-border-radius: 0;
 
-//== Panels
-//
-//##
-$panel-bg:                    #fff !default;
-$panel-body-padding:          15px !default;
-$panel-heading-padding:       10px 15px !default;
-$panel-border-radius:         0 !default;
+$panel-inner-border: #ddd;
+$panel-footer-bg: #f5f5f5;
 
-//** Border color for elements within panels
-$panel-inner-border:          #ddd !default;
-$panel-footer-bg:             #f5f5f5 !default;
-
-$panel-default-text:          #fff !default;
-$panel-default-border:        #ddd !default;
-$panel-default-heading-bg:    #515252 !default;
-$line-height-computed:        20px;
+$panel-default-text: #fff;
+$panel-default-border: #ddd;
+$panel-default-heading-bg: #515252;
+$line-height-computed: 20px;
