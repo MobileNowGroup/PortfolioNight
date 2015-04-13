@@ -13,5 +13,11 @@
         $('.carousel').hammer().on('panright', function (e) {
             $(this).carousel('prev');
         });
+
+        // Play the sound effect
+        var onOpenSound = document.getElementById('open-sound');
+        $('.collapse').on('show.bs.collapse', function() {
+            onOpenSound.play();
+        });
     });
 </script>
