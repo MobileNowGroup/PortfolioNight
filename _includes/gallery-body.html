@@ -1,10 +1,14 @@
 <div id="gallery-{{ section.order }}" class="Gallery panel-body">
 
     {% for image in section.images %}
-
+    {% assign needsClearfix = forloop.index | modulo:2 %}
     <div class="Gallery-item">
         <img class="Gallery-img" src="{{ image | remove: ' ' }}">
     </div>
+
+    {% if needsClearfix == 0 %}
+    <div class="clearfix"></div>
+    {% endif %}
 
     {% endfor %}
 
