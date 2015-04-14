@@ -11,6 +11,9 @@
 
 #logo {
   margin-bottom: $jumbotron-padding;
+  img {
+    @include img-responsive(inline-block);
+  }
 }
 
 .btn-action {
