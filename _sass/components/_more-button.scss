@@ -10,20 +10,21 @@
   &:after {
     content: '';
     color: $MoreButton-symbol-color;
-    font-family: 'Glyphicons Halflings';
+    font-size: 1.5em;
+    line-height: 100%;
     transition: transform 150ms ease;
   }
 
   &, // Default.
   &.e-more {
     &:after {
-      content: '\2b';
+      content: '+';
     }
   }
 
   &.e-less {
     &:after {
-      content: '\2212';
+      content: '–';
       transform: rotate(180deg);
     }
   }
