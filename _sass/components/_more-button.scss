@@ -1,43 +1,30 @@
 .MoreButton {
-  border: none;
   background: $MoreButton-bg;
   border-radius: 100%;
-  width: $MoreButton-size;
+  border: none;
   height: $MoreButton-size;
   position: relative;
+  text-align: center;
+  width: $MoreButton-size;
 
-  &:before,
   &:after {
     content: '';
-    background: $MoreButton-symbol-color;
-    display: block;
-    height: $MoreButton-symbol-weight;
-    left: 50%;
-    margin-left: -$MoreButton-symbol-size / 2;
-    margin-top: -$MoreButton-symbol-weight / 2;
-    position: absolute;
-    top: 50%;
+    color: $MoreButton-symbol-color;
+    font-size: 1.5em;
+    line-height: 100%;
     transition: transform 150ms ease;
-    width: $MoreButton-symbol-size;
   }
 
   &, // Default.
   &.e-more {
-    &:before {
-      transform: rotate(270deg);
-    }
-
     &:after {
-      transform: rotate(0deg);
+      content: '+';
     }
   }
 
   &.e-less {
-    &:before {
-      transform: rotate(0deg);
-    }
-
     &:after {
+      content: '–';
       transform: rotate(180deg);
     }
   }

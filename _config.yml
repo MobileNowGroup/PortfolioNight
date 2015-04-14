@@ -10,6 +10,8 @@ facebook_username:  portfolionight
 # Build settings
 markdown: kramdown
 
+gems: [ bourbon ]
+
 # Collections
 collections:
   - sections
