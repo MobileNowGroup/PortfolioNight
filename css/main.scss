@@ -11,6 +11,9 @@
 @import "theme/default";
 
 @import "base/bootstrap-override";
+@import "base/utilities";
+
 @import "components/more-button";
 @import "components/accordion";
 @import "components/gallery";
+@import "components/fullscreen-gallery";
