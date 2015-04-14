@@ -24,11 +24,8 @@ prose:
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'images'
   ignore:
-    - /_includes/button.html
-    - /_includes/footer.html
-    - /_includes/gallery.html
-    - /_includes/head.html
-    - /_includes/page.html
+    - /_includes
+    - /sound
     - /_layouts
     - /_sass
     - /css
