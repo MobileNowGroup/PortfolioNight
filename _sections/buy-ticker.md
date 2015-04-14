@@ -1,7 +1,8 @@
 ---
 type: button
-title:  "Buy ticket"
+title: Buy ticket
 href: "http://www.baidu.com"
-order: "2"
+order: "5"
+published: true
 ---
 

@@ -1,7 +1,8 @@
 ---
 type: page
-title:  "Why Should I come?"
+title: "Why Should I come?"
 order: "3"
+published: true
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad, debitis distinctio doloremque doloribus necessitatibus non quae tempora? Atque commodi cum dolores error ex incidunt ipsam libero necessitatibus, nobis placeat.
+今年将有20位中国广告界最受尊敬的创意大佬等待你的到来。每位参赛者将有幸与其中三位评委进行每次15分钟的面对面交流。
