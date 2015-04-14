@@ -21,7 +21,9 @@
   function getImages() {
     var images = [];
     this.element.find('.Gallery-img').each(function (index, element) {
-      images.push({ src: $(element).attr('src'), w: 600, h: 500 });
+      var image = { src: $(element).attr('src') };
+      images.push(image);
+      getImageSize(image);
     });
 
     this.images = images;
@@ -32,6 +34,16 @@
     this.element.on('click', '.Gallery-img', function (event) {
       self.onTouchImage($(event.target));
     });
+  }
+
+  function getImageSize(imageObject) {
+    var img = new Image();
+    img.onload = function() {
+      imageObject['w'] = this.width;
+      imageObject['h'] = this.height;
+    }
+
+    img.src = imageObject.src;
   }
 
   function onTouchImage(element) {
