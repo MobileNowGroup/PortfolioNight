@@ -3,8 +3,9 @@
 (function () {
   window.Gallery = Gallery;
 
-  function Gallery(element) {
+  function Gallery(element, fullscreenElement) {
     this.element = element;
+    this.fullscreenElement = fullscreenElement;
     this.getImages();
     this.bindOpenEvent();
   }
@@ -13,13 +14,14 @@
     constructor: Gallery,
     getImages: getImages,
     bindOpenEvent: bindOpenEvent,
-    onTouchImage: onTouchImage
-  }
+    onTouchImage: onTouchImage,
+    getSelectedImageIndex: getSelectedImageIndex
+  };
 
   function getImages() {
     var images = [];
     this.element.find('.Gallery-img').each(function (index, element) {
-      images.push($(element).attr('src'));
+      images.push({ src: $(element).attr('src'), w: 600, h: 500 });
     });
 
     this.images = images;
@@ -33,7 +35,15 @@
   }
 
   function onTouchImage(element) {
-    var selectedImage = this.images.indexOf(element.attr('src'));
-    FullscreenGallery.show(this.images, selectedImage);
+    var gallery = new PhotoSwipe(this.fullscreenElement,
+        PhotoSwipeUI_Default,
+        this.images,
+        { index: this.getSelectedImageIndex(element) });
+    gallery.init();
+  }
+
+  function getSelectedImageIndex(selectedElement) {
+    var selectedImage = _.findWhere(this.images, { src: selectedElement.attr('src') });
+    return _.indexOf(this.images, selectedImage);
   }
 })();
