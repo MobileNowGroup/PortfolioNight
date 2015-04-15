@@ -1,8 +1,15 @@
 ---
 type: gallery
 title: Last years event gallery
-images: "images/img1.svg,images/img2.svg,images/img3.svg,images/img1.svg,images/img2.svg,images/img3.svg"
-order: "5"
+images: "images/Gallery_1.svg,images/Gallery_2.svg,images/Gallery_3.svg,images/Gallery_4,images/Gallery_5.svg,images/Gallery_6.svg"
+order: "4"
 published: true
 ---
 
+![Button_4.svg](/images/Button_4.svg)
+![Gallery_5.svg](/images/Gallery_5.svg)
+![Gallery_2.svg](/images/Gallery_2.svg)
+![Gallery_3.svg](/images/Gallery_3.svg)
+![Gallery_4.svg](/images/Gallery_4.svg)
+![Gallery_6.svg](/images/Gallery_6.svg)
+![Gallery_1.svg](/images/Gallery_1.svg)
