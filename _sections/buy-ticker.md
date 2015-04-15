@@ -4,5 +4,7 @@ title: Buy ticket
 href: "https://yoopay.cn/event/62228346"
 order: "6"
 published: true
+image_title: images/Button_6
 ---
 
+![Button_6.svg](/images/Button_6.svg)
