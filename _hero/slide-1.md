@@ -1,8 +1,8 @@
 ---
 title: I am the first slide
-image: "_hero/Title-01.svg"
+image: "images/Title-01.svg"
 order: "1"
 published: true
 ---
 
-![Title-01.svg](/_hero/Title-01.svg)
+![Title-01.svg](/images/Title-01.svg)
