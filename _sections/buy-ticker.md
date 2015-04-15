@@ -1,8 +1,8 @@
 ---
 type: button
 title: Buy ticket
-href: "http://www.baidu.com"
-order: "5"
+href: "https://yoopay.cn/event/62228346"
+order: "6"
 published: true
 ---
 
