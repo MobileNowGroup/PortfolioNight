@@ -1,6 +1,6 @@
 ---
 title: I am the first slide
-image: images/img1.svg
+image: "Title-01.svg"
 order: "1"
 published: true
 ---
