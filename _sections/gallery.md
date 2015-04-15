@@ -4,6 +4,7 @@ title: Last years event gallery
 images: "images/Gallery_1.svg,images/Gallery_2.svg,images/Gallery_3.svg,images/Gallery_4,images/Gallery_5.svg,images/Gallery_6.svg"
 order: "4"
 published: true
+image_title: images/Button_4
 ---
 
 ![Button_4.svg](/images/Button_4.svg)
