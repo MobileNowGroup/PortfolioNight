@@ -3,7 +3,7 @@ published: false
 title: What do I need to bring
 type: page
 order: "3"
-image_title: images/Button_3.svg
+image_title: images/Title_3.svg
 ---
 
 ![Title_03.svg](/images/Title_03.svg)
