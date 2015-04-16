@@ -38,3 +38,13 @@
 .panel-body {
   border-top-width: 0 !important;
 }
+
+.carousel-indicators {
+  bottom: 0;
+}
+
+.carousel-inner {
+  img {
+    display: inline-block !important;
+  }
+}

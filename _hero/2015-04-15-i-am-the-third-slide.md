@@ -2,7 +2,7 @@
 published: false
 title: I am the third slide
 order: "3"
-image: "images/Title-04.svg"
+image: "images/Title-03.svg"
 ---
 
-![Title-04.svg](/images/Title-04.svg)
+![Title-03.svg](/images/Title-03.svg)
