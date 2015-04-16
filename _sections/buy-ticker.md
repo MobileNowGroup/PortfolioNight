@@ -1,9 +1,10 @@
 ---
 type: button
 title: Buy ticket
-href: "https://yoopay.cn/event/62228346"
 order: "6"
 published: true
-image_title: images/Button_6
+image_title:
+shanghai_link: "https://yoopay.cn/event/62228346"
+beijing_link: "https://yoopay.cn/event/62228346"
 ---
 
