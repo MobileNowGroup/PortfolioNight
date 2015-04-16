@@ -3,7 +3,7 @@ published: false
 title: What do I need to bring
 type: page
 order: "3"
-image_title: images/Title_3.svg
+image_title: images/Title_03.svg
 ---
 
 请准备一份石破天惊的作品集。
