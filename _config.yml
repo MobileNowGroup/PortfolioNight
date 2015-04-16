@@ -60,10 +60,15 @@ prose:
         field:
           element: "text"
           label: "Order"
-      - name: "href"
+      - name: "beijing_link"
         field:
           element: "text"
-          label: "Link"
+          label: "Beijing link"
+          placeholder: "http://"
+      - name: "shanghai_link"
+        field:
+          element: "text"
+          label: "Shanghai link"
           placeholder: "http://"
       - name: "images"
         field:
