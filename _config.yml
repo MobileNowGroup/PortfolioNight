@@ -31,10 +31,12 @@ prose:
     - /css
     - /fonts
     - /js
+    - /vendor
     - /.bowerrc
     - /.gitignore
     - /.editorconfig
     - /_config.yml
+    - /index.html
   metadata:
     _sections:
       - name: "type"
