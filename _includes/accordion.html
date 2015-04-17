@@ -8,7 +8,7 @@
             data-parent="#main-section">
         <h4 class="Accordion-header-title">
             {%if section.image_title %}
-                <img src="{{ section.image_title }}" alt="{{ section.title }}"/>
+                <img class="img-responsive" src="{{ section.image_title }}" alt="{{ section.title }}"/>
             {% else %}
                 {{ section.title }}
             {% endif %}
