@@ -8,4 +8,3 @@ shanghai_link: "https://yoopay.cn/event/21087994"
 beijing_link: "https://yoopay.cn/event/62228346"
 ---
 
-![6- Buy Ticket.svg](/images/6- Buy Ticket.svg)
