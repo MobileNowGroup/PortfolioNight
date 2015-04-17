@@ -1,6 +1,6 @@
 <article class="panel panel-default">
 
-    <a class="Accordion-header collapsed panel-heading"
+    <a class="Accordion-header {% if section.order != '1' %}collapsed{% endif %} panel-heading"
             href="#article-{{ section.order }}"
             aria-controls="article-{{ section.order }}"
             aria-expanded="false"
@@ -14,12 +14,12 @@
             {% endif %}
         </h4>
         <div class="Accordion-header-button">
-            <div class="MoreButton"></div>
+            <div class="MoreButton {% if section.order == '1' %}e-less{% endif %}"></div>
         </div>
     </a>
 
     <div id="article-{{ section.order }}"
-            class="panel-collapse collapse"
+            class="panel-collapse collapse {% if section.order == '1' %}in{% endif %}"
             role="tabpanel"
             aria-labelledby="article-{{ section.order }}">
         {% include {{ section.type }}-body.html param=section %}
