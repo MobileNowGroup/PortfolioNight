@@ -32,6 +32,7 @@ prose:
     - /fonts
     - /js
     - /vendor
+    - /wechat
     - /.bowerrc
     - /.gitignore
     - /.editorconfig
