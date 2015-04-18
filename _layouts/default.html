@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="container-fluid">
+        {{ content }}
+    </div>
+
+    <div id="gallery-fullscreen" class="FullscreenGallery">
+    </div>
+
+    {% include photo-swipe.html %}
+
+    {% include footer.html %}
+
+
+    <audio id="open-sound" preload="auto">
+        <source src="sound/open.mp3" type='audio/mpeg; codecs="mp3"'>
+        <source src="sound/open.oga" type='audio/ogg; codecs="vorbis"'>
+    </audio>
+  </body>
+
+</html>

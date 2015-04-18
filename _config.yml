@@ -1,0 +1,94 @@
+# Site settings
+title: Portfolio Night
+email: djamel@mobilenowgroup.com
+description: > #
+baseurl: "/PortfolioNight"
+url: "http://"
+twitter_username: PortfolioNight
+facebook_username:  portfolionight
+
+# Build settings
+markdown: kramdown
+
+# Collections
+collections:
+  - sections
+  - hero
+
+sass:
+    style: :compressed
+
+prose:
+  rooturl: ''
+  siteurl: 'http://MobileNowGroup.github.io/PortfolioNight/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'images'
+  ignore:
+    - /_includes
+    - /sound
+    - /_layouts
+    - /_sass
+    - /css
+    - /fonts
+    - /js
+    - /vendor
+    - /wechat
+    - /.bowerrc
+    - /.gitignore
+    - /.editorconfig
+    - /_config.yml
+    - /index.html
+  metadata:
+    _sections:
+      - name: "type"
+        field:
+          element: "select"
+          label: "Type"
+          options:
+            - name: "Text section"
+              value: "page"
+            - name: "Gallery section"
+              value: "gallery"
+            - name: "Button section"
+              value: "button"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "image_title"
+        field:
+          element: "text"
+          label: "Image title"
+      - name: "order"
+        field:
+          element: "text"
+          label: "Order"
+      - name: "beijing_link"
+        field:
+          element: "text"
+          label: "Beijing link"
+          placeholder: "http://"
+      - name: "shanghai_link"
+        field:
+          element: "text"
+          label: "Shanghai link"
+          placeholder: "http://"
+      - name: "images"
+        field:
+          element: "text"
+          label: "Images"
+          placeholder: "[images/1.jpg, images/2.jpg, ...]"
+
+    _hero:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+      - name: "order"
+        field:
+          element: "text"
+          label: "Order"

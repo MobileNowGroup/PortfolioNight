@@ -1,0 +1,42 @@
+<article class="panel panel-default panel-buttons">
+
+    <a class="Accordion-header collapsed panel-heading"
+       href="#article-{{ section.order }}"
+       aria-controls="article-{{ section.order }}"
+       aria-expanded="false"
+       data-toggle="collapse"
+       data-parent="#main-section">
+        <h4 class="Accordion-header-title">
+            {%if section.image_title %}
+            <img src="{{ section.image_title }}" alt="{{ section.title }}"/>
+            {% else %}
+            {{ section.title }}
+            {% endif %}
+        </h4>
+
+        <div class="Accordion-header-button">
+            <div class="MoreButton"></div>
+        </div>
+    </a>
+
+    <div id="article-{{ section.order }}"
+         class="panel-collapse collapse"
+         role="tabpanel"
+         aria-labelledby="article-{{ section.order }}">
+
+        <div class="panel-body">
+
+            <div class="col-xs-6">
+                <a class="btn btn-block btn-lg" href="{{ section.beijing_link }}" target="_blank">北京</a>
+            </div>
+
+            <div class="col-xs-6">
+                <a class="btn btn-block btn-lg" href="{{ section.shanghai_link }}" target="_blank">上海</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</article>

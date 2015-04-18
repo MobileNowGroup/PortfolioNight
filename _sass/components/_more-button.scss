@@ -1,0 +1,31 @@
+.MoreButton {
+  background: $MoreButton-bg;
+  border-radius: 100%;
+  border: none;
+  height: $MoreButton-size;
+  position: relative;
+  text-align: center;
+  width: $MoreButton-size;
+
+  &:after {
+    content: '';
+    color: $MoreButton-symbol-color;
+    font-size: 1.5em;
+    line-height: 100%;
+    transition: transform 150ms ease;
+  }
+
+  &, // Default.
+  &.e-more {
+    &:after {
+      content: '+';
+    }
+  }
+
+  &.e-less {
+    &:after {
+      content: '–';
+      transform: rotate(180deg);
+    }
+  }
+}

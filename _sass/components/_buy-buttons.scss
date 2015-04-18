@@ -1,0 +1,14 @@
+.panel-buttons {
+  &>.panel-heading {
+    background-color: #000000;
+  }
+
+  .btn {
+    background: #000;
+    color: #fff;
+    border-radius: 0;
+    text-align: center;
+    font-size: 22px;
+    padding-left: 15px;
+  }
+}
